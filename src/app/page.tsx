@@ -247,10 +247,20 @@ export default function Home() {
                 &#8592;
               </button>
               <div className="flex justify-center items-center space-x-2 md:space-x-4">
-                {[0, 1, 2].map((offset) => {
-                  const index = (currentIndex + offset) % images.length;
+                {/* Show 1 image on mobile, 2 on tablet, 3 on desktop */}
+                {[...Array(isMobile ? 1 : window.innerWidth < 1024 ? 2 : 3)].map((_, i) => {
+                  const index = (currentIndex + i) % images.length;
                   return (
-                    <div key={index} className="relative w-1/3 h-[200px] md:h-[300px]">
+                    <div 
+                      key={index} 
+                      className={`relative ${
+                        isMobile 
+                          ? 'w-full' 
+                          : window.innerWidth < 1024 
+                            ? 'w-1/2' 
+                            : 'w-1/3'
+                      } h-[200px] md:h-[300px]`}
+                    >
                       <Image
                         src={images[index]}
                         alt={`Gallery image ${index + 1}`}
