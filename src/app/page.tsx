@@ -41,7 +41,7 @@ export default function Home() {
     )
   };
 
-  const scrollToSection = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+  const scrollToSectionAnchor = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
     const section = document.getElementById(sectionId);
     if (section) {
@@ -49,6 +49,14 @@ export default function Home() {
     }
     if (isMobile) {
       setIsMenuOpen(false);
+    }
+  };
+
+  const scrollToSectionButton = (e: React.MouseEvent<HTMLButtonElement>, sectionId: string) => {
+    e.preventDefault();
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -94,16 +102,16 @@ export default function Home() {
               </button>
               {isMenuOpen && (
                 <ul className="absolute right-0 mt-2 py-2 w-48 bg-black rounded-md shadow-xl">
-                  <li><a href="#about" onClick={(e) => scrollToSection(e, 'about')} className="block px-4 py-2 text-[#ff26b9] hover:bg-gray-800">About</a></li>
-                  <li><a href="#gallery" onClick={(e) => scrollToSection(e, 'gallery')} className="block px-4 py-2 text-[#ff26b9] hover:bg-gray-800">Gallery</a></li>
+                  <li><a href="#about" onClick={(e) => scrollToSectionAnchor(e, 'about')} className="block px-4 py-2 text-[#ff26b9] hover:bg-gray-800">About</a></li>
+                  <li><a href="#gallery" onClick={(e) => scrollToSectionAnchor(e, 'gallery')} className="block px-4 py-2 text-[#ff26b9] hover:bg-gray-800">Gallery</a></li>
                   <li><a href="#contact" className="block px-4 py-2 text-[#ff26b9] hover:bg-gray-800">Contact</a></li>
                 </ul>
               )}
             </div>
           ) : (
             <ul className="flex space-x-6">
-              <li><a href="#about" onClick={(e) => scrollToSection(e, 'about')} className="text-[#ff26b9] hover:text-white transition duration-300">About</a></li>
-              <li><a href="#gallery" onClick={(e) => scrollToSection(e, 'gallery')} className="text-[#ff26b9] hover:text-white transition duration-300">Gallery</a></li>
+              <li><a href="#about" onClick={(e) => scrollToSectionAnchor(e, 'about')} className="text-[#ff26b9] hover:text-white transition duration-300">About</a></li>
+              <li><a href="#gallery" onClick={(e) => scrollToSectionAnchor(e, 'gallery')} className="text-[#ff26b9] hover:text-white transition duration-300">Gallery</a></li>
               <li><a href="#contact" className="text-[#ff26b9] hover:text-white transition duration-300">Contact</a></li>
             </ul>
           )}
@@ -123,7 +131,7 @@ export default function Home() {
           </h1>
           <p className="text-xl md:text-2xl mb-6 md:mb-8">Courage and Resilience - On and Off the Field</p>
           <button 
-            onClick={(e) => scrollToSection(e, 'about')}
+            onClick={(e) => scrollToSectionButton(e, 'about')}
             className="bg-[#ff26b9] text-white px-6 py-2 md:px-8 md:py-3 rounded-full text-base md:text-lg font-semibold hover:bg-opacity-80 transition duration-300 mb-6 md:mb-8"
           >
             Learn More
