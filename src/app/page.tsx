@@ -104,7 +104,7 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <blockquote className="text-center max-w-[500px] mx-auto">
             <p className="text-xl md:text-2xl lg:text-3xl leading-relaxed mb-6" style={{ fontFamily: 'TeX Gyre Pagella Bold, serif' }}>
-              "Be strong and of a good courage, fear not, nor be afraid of them: for the LORD thy God, he it is that doth go with thee; he will not fail thee, nor forsake thee."
+              &ldquo;Be strong and of a good courage, fear not, nor be afraid of them: for the LORD thy God, he it is that doth go with thee; he will not fail thee, nor forsake thee.&rdquo;
             </p>
             <footer className="text-base md:text-lg text-white">Deuteronomy 31:6</footer>
           </blockquote>
@@ -117,7 +117,7 @@ export default function Home() {
             Emerson Callahan
           </h2>
           <p className="text-center text-lg mb-8">
-            Memphis, TN | SS/OF/2B | Lausanne Collegiate School '28 | Germantown Red Devils (Club/Travel) | 4.0 GPA
+            Memphis, TN | SS/OF/2B | Lausanne Collegiate School &apos;28 | Germantown Red Devils (Club/Travel) | 4.0 GPA
           </p>
           
           <div className="mb-8 bg-gray-800 rounded overflow-hidden">
@@ -139,13 +139,13 @@ export default function Home() {
 
           <div className="space-y-6 text-lg">
             <p>
-              As one of the most dynamic young athletes in my age group, I've been told that I exude a sense of confidence and maturity beyond my years. From an early age, I've shown advanced signs in both athletics and academics, which I continue to develop and refine.
+              As one of the most dynamic young athletes in my age group, I&apos;ve been told that I exude a sense of confidence and maturity beyond my years. From an early age, I&apos;ve shown advanced signs in both athletics and academics, which I continue to develop and refine.
             </p>
             <p>
-              My passion for sports knows no bounds. I actively participate in multiple disciplines, including basketball, soccer, volleyball, and track. Despite the demanding nature of these activities, I've maintained a 4.0 GPA, showcasing my commitment to excellence both on and off the field.
+              My passion for sports knows no bounds. I actively participate in multiple disciplines, including basketball, soccer, volleyball, and track. Despite the demanding nature of these activities, I&apos;ve maintained a 4.0 GPA, showcasing my commitment to excellence both on and off the field.
             </p>
             <p>
-              Leadership is another area where I thrive. As the student body president at GSL, I relish opportunities to lead and make a positive impact. I've been described as articulate, empathetic, organized, and responsible - qualities that I strive to embody in all aspects of my life.
+              Leadership is another area where I thrive. As the student body president at GSL, I relish opportunities to lead and make a positive impact. I&apos;ve been described as articulate, empathetic, organized, and responsible - qualities that I strive to embody in all aspects of my life.
             </p>
           </div>
         </div>
