@@ -247,8 +247,7 @@ export default function Home() {
                 &#8592;
               </button>
               <div className="flex justify-center items-center space-x-2 md:space-x-4">
-                {/* Show 1 image on mobile, 2 on tablet, 3 on desktop */}
-                {[...Array(isMobile ? 1 : window.innerWidth < 1024 ? 2 : 3)].map((_, i) => {
+                {[...Array(isMobile ? 1 : 3)].map((_, i) => {
                   const index = (currentIndex + i) % images.length;
                   return (
                     <div 
@@ -256,10 +255,8 @@ export default function Home() {
                       className={`relative ${
                         isMobile 
                           ? 'w-full' 
-                          : window.innerWidth < 1024 
-                            ? 'w-1/2' 
-                            : 'w-1/3'
-                      } h-[200px] md:h-[300px]`}
+                          : 'w-1/3'
+                      } h-[200px] md:h-[300px] hidden sm:block sm:w-1/2 md:w-1/3 first:block`}
                     >
                       <Image
                         src={images[index]}
@@ -274,10 +271,6 @@ export default function Home() {
                         className="rounded-lg"
                         priority
                         unoptimized
-                        onError={(e) => {
-                          console.error(`Error loading image: ${images[index]}`);
-                          console.error(e);
-                        }}
                       />
                     </div>
                   );
