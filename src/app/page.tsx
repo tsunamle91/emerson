@@ -19,12 +19,12 @@ export default function Home() {
   }, []);
 
   const categoryContent = {
-    General: "Emerson is a well-rounded individual with a passion for sports and academics. She's known for her leadership skills and commitment to excellence in all areas of her life. Emerson has an interest in becoming a therapist and will be looking for academic programs that support that journey.",
+    General: "Emerson is a well-rounded individual with a passion for sports and academics. She&apos;s known for her leadership skills and commitment to excellence in all areas of her life. Emerson has an interest in becoming a therapist and will be looking for academic programs that support that journey.",
     Sports: (
       <div>
-        <p>Emerson excels in multiple sports, including softball, basketball, and track. She's a key player for the Germantown Red Devils, known for her versatility on the field.</p>
+        <p>Emerson excels in multiple sports, including softball, basketball, and track. She&apos;s a key player for the Germantown Red Devils, known for her versatility on the field.</p>
         <ul className="list-disc list-inside mt-2">
-          <li>Height: 5'5"</li>
+          <li>Height: 5&apos;5&quot;</li>
           <li>Bats: Right</li>
           <li>Exit Velocity: 55mph</li>
           <li>Overhand Velocity: 56mph</li>
