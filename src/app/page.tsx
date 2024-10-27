@@ -77,6 +77,12 @@ export default function Home() {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
+  // Remove the problematic useEffect and replace with this simpler version
+  useEffect(() => {
+    console.log('Current image index:', currentIndex);
+    console.log('Current image path:', images[currentIndex]);
+  }, [currentIndex]);
+
   return (
     <main className="min-h-screen bg-black text-white">
       <section className="relative min-h-screen flex items-center justify-center">
@@ -245,6 +251,11 @@ export default function Home() {
                         layout="fill"
                         objectFit="cover"
                         className="rounded-lg"
+                        priority
+                        onError={(e) => {
+                          console.error(`Error loading image: ${images[index]}`);
+                          console.error(e);
+                        }}
                       />
                     </div>
                   );
