@@ -65,12 +65,11 @@ export default function Home() {
   };
 
   const images = [
-    "/gallery1.JPEG",
-    "/gallery2.JPEG",
-    "/gallery3.JPEG",
-    "/gallery4.JPEG",
-    "/gallery5.JPEG",
-    "/gallery6.JPEG"
+    "/emerson-1.JPEG",
+    "/emerson-2.JPEG",
+    "/emerson-3.JPEG",
+    "/emerson-4.JPEG",
+    "/emerson-5.JPEG"
   ];
 
   const nextImage = () => {
