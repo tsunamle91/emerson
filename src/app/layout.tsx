@@ -7,25 +7,25 @@ const inter = Inter({ subsets: ['latin'] });
 const playfair = Playfair_Display({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Emerson Callahan | Student Athlete',
+  title: 'Emerson Callahan | Dynamic Student Athlete and Leader',
   description: 'Dynamic Student Athlete and Leader - Courage and Resilience On and Off the Field',
   openGraph: {
-    title: 'Emerson Callahan | Student Athlete',
+    title: 'Emerson Callahan | Dynamic Student Athlete and Leader',
     description: 'Dynamic Student Athlete and Leader - Courage and Resilience On and Off the Field',
     images: [
       {
-        url: '/emerson-og-grayscale.JPEG',
+        url: '/emerson red devils.JPEG',
         width: 1200,
         height: 630,
-        alt: 'Emerson Callahan',
+        alt: 'Emerson Callahan - Dynamic Student Athlete and Leader',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Emerson Callahan | Student Athlete',
+    title: 'Emerson Callahan | Dynamic Student Athlete and Leader',
     description: 'Dynamic Student Athlete and Leader - Courage and Resilience On and Off the Field',
-    images: ['/emerson-og-grayscale.JPEG'],
+    images: ['/emerson red devils.JPEG'],
   },
 };
 
