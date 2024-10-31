@@ -26,9 +26,9 @@ export default function Home() {
     General: "Emerson is a well-rounded individual with a passion for sports and academics. She is known for her leadership skills and commitment to excellence in all areas of her life. Emerson has an interest in becoming a therapist and will be looking for academic programs that support that journey.",
     Sports: (
       <div>
-        <p>Emerson excels in multiple sports, including softball, basketball, and track. She&apos;s a key player for the Germantown Red Devils, known for her versatility on the field.</p>
+        <p>Emerson is a standout multi-sport athlete and natural leader who excels at softball (nationally competitive/travel and varsity starter), varsity soccer (starter) and varsity basketball (the 6th man as a freshman).</p>
         <ul className="list-disc list-inside mt-2">
-          <li>Height: 5&apos;5&quot;</li>
+          <li>Height: 5&apos;8&quot;</li>
           <li>Bats: Right</li>
           <li>Exit Velocity: 55mph</li>
           <li>Overhand Velocity: 56mph</li>
@@ -40,7 +40,9 @@ export default function Home() {
     Academics: (
       <ul className="list-disc list-inside">
         <li>4.0 GPA</li>
-        <li>Student Body President (GSL)</li>
+        <li>Student Body President (Grace St. Luke&apos;s Episcopal School)</li>
+        <li>Student Ambassador (Lausanne Collegiate School)</li>
+        <li>40 Hours Community Service per Year</li>
       </ul>
     )
   };
@@ -200,7 +202,7 @@ export default function Home() {
             <p className="mt-2 text-sm text-gray-400">(Recruitment Profile)</p>
           </div>
 
-          <div className="mb-6 md:mb-8 bg-gray-800 rounded overflow-hidden">
+          <div className="mb-8 bg-gray-800 rounded overflow-hidden">
             <div className="flex">
               {["General", "Sports", "Academics"].map((category) => (
                 <button
@@ -212,20 +214,34 @@ export default function Home() {
                 </button>
               ))}
             </div>
-            <div className="p-4">
-              <p className="leading-relaxed">{categoryContent[activeCategory]}</p>
+            <div className="p-4 h-[300px] overflow-y-auto">
+              <div className="leading-relaxed">
+                {categoryContent[activeCategory]}
+              </div>
             </div>
           </div>
 
-          <div className="space-y-4 md:space-y-6 text-base md:text-lg leading-relaxed">
+          {/* Pink Divider */}
+          <div className="w-1/4 h-[2px] bg-[#ff26b9] mx-auto mb-8"></div>
+
+          <div className="space-y-6 text-base md:text-lg leading-relaxed">
             <p>
-              Emerson Callahan is one of the most dynamic young athletes in her age group, exuding a sense of confidence and maturity beyond her years. From an early age, she has shown advanced signs in both athletics and academics, which she continues to develop and refine.
+              A natural born athlete. A strong leader. A teammates&apos; teammate. She loves to compete. Only a Freshman, Emerson Callahan is a highly talented multi-sport athlete known for her athleticism and leadership on and off the field.
             </p>
             <p>
-              Her passion for sports knows no bounds. Emerson actively participates in multiple disciplines, including basketball, soccer, volleyball, and track. Known for her enthusiastic spirit, she is a vocal presence on the field, loudly cheering on her teammates and fellow athletes with unwavering support. Despite the demanding nature of these activities, she has maintained a 4.0 GPA, showcasing her commitment to excellence both on and off the field.
+              In softball, she&apos;s a standout shortstop, middle infielder and utility player, competing nationally with Germantown Red Devils for competitive/travel softball and playing high school softball for St. Benedict&apos;s in Memphis, which placed third in the state in 2023.
             </p>
             <p>
-              Leadership is another area where Emerson thrives. As the student body president at GSL, she relishes opportunities to lead and make a positive impact. Emerson has been described as articulate, empathetic, organized, and responsible - qualities that she strives to embody in all aspects of her life.
+              In varsity high school soccer, Emerson started every game, playing all over the field with primary roles at the 6th position and right defender for Lausanne Collegiate School, which finished second in the state for the first time in school history in 2024. This followed her standout season in competitive soccer with Germantown Legends Soccer where she played starting wing for the 2009 squad that won the D2 State Championships in 2024.
+            </p>
+            <p>
+              She also is a varsity leader in basketball for Lausanne Collegiate School after finishing middle school with multiple county championships and back-to-back all tournament team selections. She&apos;s a strong shooting guard, but versatile enough to work at point, forward and even center.
+            </p>
+            <p>
+              Known for her sports intelligence, intense play and enthusiastic spirit, she is a strong and wise vocal presence on the field who provides her fellow athletes with unwavering support. Despite the demanding schedule of a driven multi-sport athlete, she has maintained a 4.0 GPA, showcasing her commitment to excellence both on and off the field.
+            </p>
+            <p>
+              Leading comes naturally to Emerson, and she invests time studying the best to improve that gift in service to others. She was the student body president of her middle school and the vice president before that. Taking leadership roles in high school and on every team where she plays, she relishes opportunities to make a positive impact in the lives of others. She&apos;s often described as articulate, empathetic, inspiring, empowering, driven, loyal, faithful, high energy, organized, and responsible – qualities that she strives to embody in all aspects of her life.
             </p>
           </div>
         </div>
