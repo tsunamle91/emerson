@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://emersoncallahan.com'),
   title: 'Emerson Callahan | Dynamic Student Athlete and Leader',
   description: 'Dynamic Student Athlete and Leader - Courage and Resilience On and Off the Field',
+  icons: {
+    icon: '/favicon-32x32.png',
+  },
   openGraph: {
     type: 'website',
     title: 'Emerson Callahan | Dynamic Student Athlete and Leader',
