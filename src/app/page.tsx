@@ -92,7 +92,7 @@ export default function Home() {
     <main className={`min-h-screen bg-black text-white ${inter.className}`}>
       <section className="relative min-h-screen flex items-center justify-center">
         <Image
-          src="/emerson red devils.JPEG"
+          src="/emerson-og-grayscale.JPEG"
           alt="Emerson Red Devils"
           layout="fill"
           objectFit="cover"
@@ -302,6 +302,33 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Video section with white background */}
+      <div className="bg-white py-12">
+        <div className="container mx-auto px-4">
+          <h3 className={`${playfair.className} text-2xl md:text-3xl font-bold mb-6 text-center text-[#ff26b9]`}>
+            Video Highlights
+          </h3>
+          <div className="grid md:grid-cols-2 gap-8">
+            <div className="aspect-w-16 aspect-h-9">
+              <iframe
+                src="https://player.vimeo.com/video/1027726168?h=c8c3d8c8c8"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                className="w-full h-[300px] md:h-[400px] rounded-lg"
+              ></iframe>
+            </div>
+            <div className="aspect-w-16 aspect-h-9">
+              <iframe
+                src="https://player.vimeo.com/video/964610607?h=c8c3d8c8c8"
+                allow="autoplay; fullscreen; picture-in-picture"
+                allowFullScreen
+                className="w-full h-[300px] md:h-[400px] rounded-lg"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section className="bg-white text-black py-12 md:py-20">
         <div className="container mx-auto px-4 max-w-3xl">
