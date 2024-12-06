@@ -149,15 +149,7 @@ export default function Home() {
             Learn More
           </button>
           <div className="flex justify-center space-x-4 md:space-x-6">
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-              <Image
-                src="/instagram copy.png"
-                alt="Instagram"
-                width={40}
-                height={40}
-              />
-            </a>
-            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+            <a href="https://x.com/emersoncalla3" target="_blank" rel="noopener noreferrer">
               <Image
                 src="/x social copy.png"
                 alt="X (Twitter)"
@@ -349,15 +341,7 @@ export default function Home() {
               />
             </div>
             <div className="flex space-x-6">
-              <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                <Image
-                  src="/instagram copy.png"
-                  alt="Instagram"
-                  width={30}
-                  height={30}
-                />
-              </a>
-              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+              <a href="https://x.com/emersoncalla3" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/x social copy.png"
                   alt="X (Twitter)"
@@ -365,7 +349,6 @@ export default function Home() {
                   height={30}
                 />
               </a>
-              {/* Add more social media icons as needed */}
             </div>
           </div>
           <div className="mt-6 md:mt-8 text-center text-xs md:text-sm font-light">
